@@ -18,17 +18,18 @@ public class EX1
         list.add(str2);
         list.add(str3);
         list.add(str4);
-        if(dat[0] == "print")
-        {
-            System.out.printf("Полный список:\n%s\nВыбранный элемент:", list);
-            int tmp = Integer.parseInt(dat[1]);
-            list.get(tmp - 1);
-        }
-        else
+        System.out.println(dat[0]);
+        if(dat[0] != "print")
         {
             int tmp = Integer.parseInt(dat[1]);
             list.add(tmp - 1, dat[0]);
             System.out.println(list);
+        }
+        else
+        {
+            System.out.printf("Полный список:\n%s\nВыбранный элемент:", list);
+            int tmp = Integer.parseInt(dat[1]);
+            list.get(tmp - 1);
         }
         
         
