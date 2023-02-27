@@ -27,7 +27,6 @@ public class EX1
         }
         else
         {
-            System.out.printf("Полный список:\n%s\nВыбранный элемент:", list);
             int tmp = Integer.parseInt(dat[1]);
             list.get(tmp - 1);
         }
